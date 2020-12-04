@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fffacd">
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-113dp"
+        tools:layout_editor_absoluteY="-28dp">
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="배송지 입력 : "
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_marginBottom="30dp"
+                android:id="@+id/et_id"
+                android:layout_width="245dp"
+                android:layout_height="66dp"
+                android:ems="10"
+                android:hint="address"
+                android:inputType="textLongMessage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:background="@drawable/bin_skyblue"
+            android:textColor="#ffffff"
+            android:id="@+id/credit"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="카드결제" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bin_blue"
+            android:textColor="#ffffff"
+            android:id="@+id/cash"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="무통장입금" />
+    </LinearLayout>
+    >
+</androidx.constraintlayout.widget.ConstraintLayout>
